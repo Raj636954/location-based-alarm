@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.alerts"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".markLocation"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".saveLocation"
+                  android:label="Add Location">
+        </activity>
+           <activity android:name=".myLocation"
+                  android:label="View Location">
+        </activity>
+         <activity android:name=".NewAlert"
+                  android:label="Add New Alert">
+        </activity>
+         <activity android:name=".alert"
+                  android:label="Add alert">
+        </activity>
+        <activity android:name=".shortPath"
+                  android:label="Find Short Path">
+                  
+        </activity>
+        <activity android:name="."
+                  android:label="Find Short Path">
+                  
+        </activity>
+        
+        
+        <service android:enabled="true" android:name=".ActTriggerService"/>
+         <service android:enabled="true" android:name=".SetOneService"/>
+        <service android:enabled="true" android:name=".ProxyService"/>
+<uses-library android:name="com.google.android.maps"/>
+
+
+
+
+    </application>
+    <uses-library android:name="com.google.android.maps"/>
+     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.INTERNET"/>
+ <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> 
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest> 

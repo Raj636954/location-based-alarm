@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <Button android:text="ALERTS"
+     android:id="@+id/btnAlert"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"
+      android:onClick="btnAlert">
+      </Button>
+    <Button android:text="FIND NEAREST SPOT" 
+    android:id="@+id/btnIntFind"
+     android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:onClick="btnShortPath">
+      </Button>
+    <Button android:text="MY LOCATIONS"
+     android:id="@+id/btnMyLocation" 
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content"
+     android:onClick="btnMyLocations"
+     >
+     </Button>
+
+</LinearLayout>

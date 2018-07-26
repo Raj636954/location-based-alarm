@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400sp"
+    android:layout_height="fill_parent"
+    >
+
+<RelativeLayout android:id="@+id/RelativeLayout01" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content">
+
+<TextView android:text="Location Name" 
+android:id="@+id/TextView01" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content">
+</TextView>
+
+<EditText android:text="" 
+android:id="@+id/edtLocationName" 
+android:maxLength="30"
+android:layout_toRightOf="@+id/TextView01"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content" android:inputType="text">
+</EditText>
+</RelativeLayout>
+
+
+<TextView android:text="Choose Category" 
+android:id="@+id/TextView02" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content">
+</TextView>
+
+<Spinner android:id="@+id/spnCategory" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content">
+</Spinner>
+
+
+<RelativeLayout android:id="@+id/RelativeLayout01" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:gravity="center"
+>
+<Button android:text="Save" 
+android:id="@+id/btnSave" 
+android:layout_width="150sp" 
+android:layout_height="wrap_content" 
+android:onClick="btnSaveClick">
+</Button>
+
+<Button android:text="Add Alert" 
+android:id="@+id/btnAddAlert" 
+android:layout_width="150sp"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@+id/btnSave"
+android:onClick="btnAddAlertClick"></Button>
+</RelativeLayout>
+</LinearLayout>
+
+

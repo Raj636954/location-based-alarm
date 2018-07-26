@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+
+<RelativeLayout android:id="@+id/RelativeLayout01" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content">
+
+<Button android:text="MARK" 
+android:id="@+id/btnMark" 
+android:layout_centerVertical="true"
+android:layout_width="160sp" 
+android:layout_height="50sp" 
+android:layout_alignParentLeft="true">
+</Button>
+
+<Button android:text="EDIT" 
+android:id="@+id/btnEdit" 
+android:layout_toRightOf="@+id/btnMark"
+android:layout_height="50sp" 
+android:layout_width="160sp" 
+
+android:layout_alignParentRight="true"></Button>
+
+</RelativeLayout>
+
+<com.google.android.maps.MapView
+android:id="@+id/myMapView"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:enabled="true"
+android:clickable="true"
+android:apiKey="0tb1KuHeqxYK0ZV9J-yvhZmFpjvIrxDvkGOeGrA"
+/>
+
+</LinearLayout>
